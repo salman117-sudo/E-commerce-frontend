@@ -1,0 +1,24 @@
+@font-face {
+  font-family: integral;
+  src: url("../src/assets/fonts/Fontspring-DEMO-integralcf-regular.otf");
+}
+
+@font-face {
+  font-family: satoshi;
+  src: url("../src/assets/fonts/Satoshi-Regular.otf");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-gray1: #f3f4f6;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray2: #6a7282;
+  --color-gray3: #364153;
+
+  --font-integral: integral, "sans-serif";
+  --font-satoshi: satoshi, "sans-serif";
+
+  --breakpoint-cw: 1150px;
+}
