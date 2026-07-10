@@ -6,7 +6,7 @@ const ProductGallery = ({ product }) => {
 
   return (
     <div className="w-full max-w-[1920px] min-w-75 mx-auto flex flex-col md:flex-row gap-3 sm:gap-4">
-      <div className="flex md:flex-col flex-row gap-6 order-2 md:order-1 justify-center md:justify-start overflow-x-auto md:overflow-visible">
+      <div className="flex md:flex-col flex-row gap-8 order-2 md:order-1 justify-center md:justify-start overflow-x-auto md:overflow-visible">
         {thumbnails.map((thumb, i) => (
           <button
             key={i}
@@ -24,7 +24,7 @@ const ProductGallery = ({ product }) => {
         ))}
       </div>
 
-      <div className="order-1 md:order-2 flex-1 aspect-square md:aspect-4/5 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center">
+      <div className="order-1 md:order-2 flex-1 aspect-square md:aspect-4/4 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center">
         <img
           src={mainImg}
           alt={product.name}

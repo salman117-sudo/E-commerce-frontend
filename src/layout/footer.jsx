@@ -23,7 +23,7 @@ const paymentBadges = [
 ]
 
 const FooterLinkColumn = ({ title, links }) => (
-  <div className="flex flex-col gap-4">
+  <div className="flex flex-col gap-4 ">
     <h4 className="uppercase text-xs tracking-widest font-semibold text-gray-500">
       {title}
     </h4>
@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
 
         {/* bottom bar */}
-        <div className="border-t border-gray-300 py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-gray-300 py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-4 mb-20">
           <p className="text-sm text-gray-500 text-center sm:text-left">
             Shop.co (c) 2000-2023, All Rights Reserved
           </p>
