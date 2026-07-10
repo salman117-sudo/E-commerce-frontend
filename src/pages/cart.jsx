@@ -26,7 +26,7 @@ const Cart = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6 sm:py-8">
+    <div className="max-w-7xl mx-auto px-4 py-6 sm:py-8 mb-30">
       <p className="text-sm text-gray-500 mb-4">
         <Link to="/" className="hover:text-black transition-colors">Home</Link>
         {' > '}

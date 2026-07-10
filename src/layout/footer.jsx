@@ -24,13 +24,13 @@ const paymentBadges = [
 
 const FooterLinkColumn = ({ title, links }) => (
   <div className="flex flex-col gap-4 ">
-    <h4 className="uppercase text-xs tracking-widest font-semibold text-gray-500">
+    <h4 className="uppercase text-xs tracking-widest font-semibold text-gray2">
       {title}
     </h4>
     <ul className="flex flex-col gap-3">
       {links.map((link) => (
         <li key={link}>
-          <a href="#" className="text-sm text-gray-500 hover:text-black transition-colors">
+          <a href="#" className="text-sm text-gray2 hover:text-black transition-colors">
             {link}
           </a>
         </li>
@@ -80,7 +80,7 @@ const Footer = () => {
               alt="Shop.co logo"
               className="h-6 w-auto mx-0 block "
             />
-            <p className="text-sm text-gray-500 max-w-62.5">
+            <p className="text-sm text-gray2 max-w-62.5">
               {"We have clothes that suits your style and which you're proud to wear. From women to men."}
             </p>
             <div className="flex gap-3">
@@ -106,8 +106,8 @@ const Footer = () => {
         </div>
 
         {/* bottom bar */}
-        <div className="border-t border-gray-300 py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-4 mb-20">
-          <p className="text-sm text-gray-500 text-center sm:text-left">
+        <div className="border-t border-gray4 py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-4 mb-20">
+          <p className="text-sm text-gray2 text-center sm:text-left">
             Shop.co (c) 2000-2023, All Rights Reserved
           </p>
           <div className="flex gap-2">

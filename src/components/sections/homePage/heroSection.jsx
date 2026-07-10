@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const HeroSection = () => {
   return (
@@ -31,16 +33,19 @@ const HeroSection = () => {
               Find Clothes That Matches Your Style
             </h1>
 
-            <p className="text-gray-600 font-Satoshi text-sm lg:text-base font-satoshi   leading-relaxed max-w-xl mx-0 sm:mx-auto lg:mx-0">
+            <p className="text-gray5 font-Satoshi text-sm lg:text-base font-satoshi   leading-relaxed max-w-xl mx-0 sm:mx-auto lg:mx-0">
               Browse through our diverse range of meticulously crafted
               garments, designed to bring out your individuality and cater to
               your sense of style.
             </p>
 
             <div className="w-full flex justify-center sm:block sm:w-auto">
-              <button className="bg-black text-white font-medium font-satoshi px-20 py-3 sm:px-18 md:px-18 sm:py-3 md:py-4 rounded-full hover:bg-gray-800 transition">
+              <Link
+                to="/category"
+                className="inline-block bg-black text-white font-medium font-satoshi px-20 py-3 sm:px-18 md:px-18 sm:py-3 md:py-4 rounded-full hover:bg-gray-800 transition text-center"
+              >
                 Shop Now
-              </button>
+              </Link>
             </div>
 
             {/* Stats */}

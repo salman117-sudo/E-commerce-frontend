@@ -141,14 +141,22 @@ const Reviews = () => {
         </div>
       </div>
 
-      {/* scrollable review row */}
-      <div
-        ref={scrollRef}
-        className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 [-ms-overflow-style:none]  [&::-webkit-scrollbar]:hidden"
-      >
-        {reviews.map((review) => (
-          <ReviewCard key={review.id} review={review} />
-        ))}
+      {/* scrollable review row with fade edges */}
+      <div className="relative">
+        {/* left fade overlay */}
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-linear-to-r from-white to-transparent" />
+
+        {/* right fade overlay */}
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-linear-to-l from-white to-transparent" />
+
+        <div
+          ref={scrollRef}
+          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 [-ms-overflow-style:none]  [&::-webkit-scrollbar]:hidden"
+        >
+          {reviews.map((review) => (
+            <ReviewCard key={review.id} review={review} />
+          ))}
+        </div>
       </div>
     </div>
   )

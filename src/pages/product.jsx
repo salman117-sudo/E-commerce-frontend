@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { allProducts } from '@/data/products'
 import {
@@ -11,6 +11,10 @@ import {
 function Product() {
   const { id } = useParams()
   const product = allProducts.find((p) => p.id === Number(id))
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [id])
 
   if (!product) {
     return (
@@ -39,7 +43,7 @@ function Product() {
       </div>
 
       <RatingReviews />
-      <YouMightAlsoLike currentId={product.id} />
+      <YouMightAlsoLike />
     </div>
   )
 }
