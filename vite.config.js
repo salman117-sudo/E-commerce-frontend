@@ -23,6 +23,7 @@ export default defineConfig({
       "@productPage": path.resolve(__dirname, "./src/components/sections/productPage"),
       "@categoryPage": path.resolve(__dirname, "./src/components/sections/categoryPage"),
         "@cartPage": path.resolve(__dirname, "./src/components/sections/cartPage"),
+        "@checkoutPage": path.resolve(__dirname, "./src/components/sections/checkoutPage"),
 
       "@data": path.resolve(__dirname, "./src/data"),
     },
