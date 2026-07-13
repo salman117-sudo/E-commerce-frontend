@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useLocation, Link } from 'react-router-dom'
-import { useCart } from '@/context/CartContext'
+import useCartStore from '@/store/useCartStore'
 import {
   ShippingForm,
   PaymentForm,
@@ -11,7 +11,8 @@ import {
 
 const Checkout = () => {
   const location = useLocation()
-  const { cart, clearCart } = useCart()
+  const cart = useCartStore((s) => s.cart)
+  const clearCart = useCartStore((s) => s.clearCart)
   const [isPaid, setIsPaid] = useState(false)
 
   const buyNowItem = location.state?.buyNowItem
@@ -53,7 +54,7 @@ const Checkout = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6 sm:py-8 mb-20">
+    <div className="max-w-7xl mx-auto px-4 py-6 sm:py-8">
       <p className="text-sm text-gray-500 mb-4">
         <Link to="/" className="hover:text-black transition-colors">Home</Link>
         {' > '}

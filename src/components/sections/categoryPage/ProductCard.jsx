@@ -7,7 +7,7 @@ const ProductCard = ({ id, img, name, rating, price, oldPrice, discount }) => {
       <div className="relative mb-3 aspect-square overflow-hidden rounded-2xl bg-gray-100">
         <img src={img} alt={name} className="h-full w-full object-cover" />
       </div>
-      <h4 className="mb-1 text-sm font-medium sm:text-[20px] font-bold">{name}</h4>
+      <h4 className="mb-1 text-sm  sm:text-[20px] font-bold">{name}</h4>
       <div className="mb-1 flex items-center gap-1">
         <Star size={14} className="fill-yellow-400 text-yellow-400" />
         <span className="text-sm text-gray-500">{rating}/5</span>
