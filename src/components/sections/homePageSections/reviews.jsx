@@ -122,7 +122,7 @@ const Reviews = () => {
             className="w-10 h-10 rounded-full flex items-center justify-center  hover:text-white transition-colors"
           >
             <img
-              src="homePage/homepage/reviews/arrow-down-bold 2.svg"
+              src="homePage/reviews/arrow-down-bold 2.svg"
               alt="Previous"
               className="w-4 h-4"
             />
@@ -133,7 +133,7 @@ const Reviews = () => {
             className="w-10 h-10 rounded-full  flex items-center justify-center  hover:text-white transition-colors"
           >
             <img
-              src="homePage/homepage/reviews/arrow-down-bold 1.svg"
+              src="homePage/reviews/arrow-down-bold 1.svg"
               alt="Next"
               className="w-4 h-4"
             />
