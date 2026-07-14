@@ -1,4 +1,3 @@
-import React from 'react'
 import { Trash2 } from 'lucide-react'
 
 const CartItem = ({ item, onUpdateQuantity, onRemove, onBuyNow }) => {
