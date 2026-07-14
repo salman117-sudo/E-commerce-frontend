@@ -1,14 +1,16 @@
-import { Navigate } from 'react-router-dom'
-import useAuthStore from '@/store/useAuthStore'
+import { Navigate } from "react-router-dom";
+import useAuthStore from "@/store/useAuthStore";
 
 const ProtectedRoute = ({ children }) => {
-  const isLoggedIn = useAuthStore((s) => s.isLoggedIn)
+  const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
 
-  if (!isLoggedIn) {
-    return <Navigate to="/signup" replace />
+  console.log("ProtectedRoute:", isLoggedIn);
+
+  if (isLoggedIn === false) {
+    return <Navigate to="/signup" replace />;
   }
 
-  return children
-}
+  return children;
+};
 
-export default ProtectedRoute
+export default ProtectedRoute;
