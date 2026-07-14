@@ -7,27 +7,27 @@ const Brandlogo = () => {
         <div className="flex flex-wrap items-center justify-center md:justify-between gap-x-8 gap-y-5">
 
           <img
-            src="homePage/homepage/brand/group1.svg"
+            src="/homePage/brand/group1.svg"
             alt="Versace logo"
             className="h-4 sm:h-5 md:h-6 w-auto"
           />
           <img
-            src="homePage/homepage/brand/group2.svg"
+            src="homePage/brand/group2.svg"
             alt="Zara logo"
             className="h-4 sm:h-5 md:h-6 w-auto"
           />
           <img
-            src="homePage/homepage/brand/group3.svg"
+            src="homePage/brand/group3.svg"
             alt="Gucci logo"
             className="h-4 sm:h-5 md:h-6 w-auto"
           />
           <img
-            src="homePage/homepage/brand/group4.svg"
+            src="homePage/brand/group4.svg"
             alt="Prada logo"
             className="h-5 sm:h-6 md:h-7 w-auto"
           />
           <img
-            src="homePage/homepage/brand/group5.svg"
+            src="homePage/brand/group5.svg"
             alt="Calvin Klein logo"
             className="h-4 sm:h-5 md:h-6 w-auto"
           />

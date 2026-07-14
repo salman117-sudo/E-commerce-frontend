@@ -4,25 +4,25 @@ const dressStyles = [
   {
     id: 1,
     name: 'Casual',
-    img: 'homePage/homepage/dressStyle/image 11.webp',
+    img: 'homePage/dressStyle/image 11.webp',
     colSpan: 'sm:col-span-2',
   },
   {
     id: 2,
     name: 'Formal',
-    img: 'homePage/homepage/dressStyle/image 13.webp',
+    img: 'homePage/dressStyle/image 13.webp',
     colSpan: 'sm:col-span-3',
   },
   {
     id: 3,
     name: 'Party',
-    img: 'homePage/homepage/dressStyle/image 12.webp',
+    img: 'homePage/dressStyle/image 12.webp',
     colSpan: 'sm:col-span-3',
   },
   {
     id: 4,
     name: 'Gym',
-    img: 'homePage/homepage/dressStyle/image 14.webp',
+    img: 'homePage/dressStyle/image 14.webp',
     colSpan: 'sm:col-span-2',
   },
 ]

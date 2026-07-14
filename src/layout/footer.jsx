@@ -8,18 +8,18 @@ const footerLinks = {
 }
 
 const socialIcons = [
-  { src: '/homePage/layout/footer/1.svg', alt: 'Twitter logo' },
-  { src: '/homePage/layout/footer/2.svg', alt: 'Facebook logo' },
-  { src: '/homePage/layout/footer/3.svg', alt: 'Instagram logo' },
-  { src: '/homePage/layout/footer/4.svg', alt: 'Github logo' },
+  { src: '/layout/footer/2.svg', alt: 'Facebook logo' },
+  { src: '/layout/footer/1.svg', alt: 'Twitter logo' },
+  { src: '/layout/footer/3.svg', alt: 'Instagram logo' },
+  { src: '/layout/footer/4.svg', alt: 'Github logo' },
 ]
 
 const paymentBadges = [
-  { src: '/homePage/layout/footer/Badge.svg', alt: 'Visa' },
-  { src: '/homePage/layout/footer/Badge (1).svg', alt: 'Mastercard' },
-  { src: '/homePage/layout/footer/Badge (2).svg', alt: 'PayPal' },
-  { src: '/homePage/layout/footer/Badge (3).svg', alt: 'Apple Pay' },
-  { src: '/homePage/layout/footer/Badge (4).svg', alt: 'Google Pay' },
+  { src: '/layout/footer/Badge.svg', alt: 'Visa' },
+  { src: '/layout/footer/Badge (1).svg', alt: 'Mastercard' },
+  { src: '/layout/footer/Badge (2).svg', alt: 'PayPal' },
+  { src: '/layout/footer/Badge (3).svg', alt: 'Apple Pay' },
+  { src: '/layout/footer/Badge (4).svg', alt: 'Google Pay' },
 ]
 
 const FooterLinkColumn = ({ title, links }) => (
@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="flex flex-col gap-3 w-full sm:w-auto">
             <div className="flex items-center gap-2 bg-white rounded-full px-4 py-3 w-full sm:w-75 ">
               <img
-                src="/homePage/layout/footer/Frame.svg"
+                src="/layout/footer/Frame.svg"
                 alt=""
                 className="w-5 h-5 opacity-50"
               />
@@ -76,7 +76,7 @@ const Footer = () => {
           {/* logo + description + socials */}
           <div className="lg:col-span-1 flex flex-col items-start text-left gap-4">
             <img
-              src="/homePage/layout/footer/SHOP.CO.svg"
+              src="/layout/footer/SHOP.CO.svg"
               alt="Shop.co logo"
               className="h-6 w-auto mx-0 block "
             />

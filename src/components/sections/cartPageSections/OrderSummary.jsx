@@ -8,7 +8,7 @@ const OrderSummary = ({ subtotal, discountPercent, discountAmount, deliveryFee, 
   }
 
   return (
-    <div className="w-full lg:w-[380px] rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col gap-4 shrink-0">
+    <div className="w-full lg:w-95 rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col gap-4 shrink-0">
       <h2 className="text-lg font-bold">Order Summary</h2>
 
       <div className="flex justify-between text-sm">

@@ -1,11 +1,18 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
-import { ChevronDown } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import { ChevronDown, LogOut } from "lucide-react";
+import useAuthStore from "@/store/useAuthStore";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showBanner, setShowBanner] = useState(true);
+  const navigate = useNavigate();
+  const logout = useAuthStore((s) => s.logout);
+
+  const handleLogout = () => {
+    logout();
+    navigate("/login");
+  };
 
   return (
     <>
@@ -40,7 +47,7 @@ const Navbar = () => {
               aria-label="Toggle menu"
             >
               <img
-                src="/homePage/layout/navbar/menu-icon.png"
+                src="/layout/navbar/menu-icon.png"
                 alt="menu icon"
                 className="w-4 h-4"
               />
@@ -48,7 +55,7 @@ const Navbar = () => {
 
             <Link to="/">
               <img
-                src="/homePage/layout/navbar/SHOP.CO.svg"
+                src="layout/navbar/SHOP.CO.svg"
                 alt="Shop.co Logo"
                 className="h-4 sm:h-5 md:h-6 w-auto shrink-0 cursor-pointer"
               />
@@ -123,15 +130,25 @@ const Navbar = () => {
             </button>
 
             <img
-              src="/homePage/layout/navbar/Vector (2).svg"
+              src="/layout/navbar/Vector (2).svg"
               alt="cart"
               className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 cursor-pointer"
             />
             <img
-              src="/homePage/layout/navbar/Frame.svg"
+              src="layout/navbar/Frame.svg"
               alt="profile"
               className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 cursor-pointer"
             />
+
+            {/* Logout button */}
+            <button
+              onClick={handleLogout}
+              aria-label="Logout"
+              className="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-gray-600 hover:text-black transition ml-1"
+            >
+              <LogOut className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">Logout</span>
+            </button>
           </div>
         </div>
 
@@ -144,21 +161,34 @@ const Navbar = () => {
                   Shop
                 </li>
 
-               <li>
-  <Link
-    to="/category"
-    onClick={() => setMenuOpen(false)}
-    className="cursor-pointer hover:text-green-500 transition"
-  >
-    Category
-  </Link>
-</li>
+                <li>
+                  <Link
+                    to="/category"
+                    onClick={() => setMenuOpen(false)}
+                    className="cursor-pointer hover:text-green-500 transition"
+                  >
+                    Category
+                  </Link>
+                </li>
 
                 <li className="cursor-pointer hover:text-green-500 transition">
                   New Arrivals
                 </li>
                 <li className="cursor-pointer hover:text-green-500 transition">
                   Brands.
+                </li>
+
+                <li>
+                  <button
+                    onClick={() => {
+                      setMenuOpen(false);
+                      handleLogout();
+                    }}
+                    className="flex items-center gap-2 text-red-500 hover:text-red-600 transition"
+                  >
+                    <LogOut className="w-5 h-5" />
+                    Logout
+                  </button>
                 </li>
               </ul>
 

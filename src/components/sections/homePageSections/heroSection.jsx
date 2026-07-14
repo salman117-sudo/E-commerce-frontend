@@ -8,19 +8,19 @@ const HeroSection = () => {
     <section className="relative w-full overflow-hidden max-w-480 mx-auto  min-w-75">
       {/* Desktop Background Image - Rectangle 2, hidden below lg */}
       <img
-        src="homePage/homepage/herosection/Rectangle 2.webp"
+        src="homePage/herosection/Rectangle 2.webp"
         alt="Models wearing stylish clothes"
         className="hidden lg:block w-full h-125 md:h-137.5 lg:h-150 xl:h-160 object-cover object-[right_15%]"
       />
 
       {/* Stars over desktop image - hidden below lg */}
       <img
-        src="homePage/homepage/herosection/Vector (2).svg"
+        src="homePage/herosection/Vector (2).svg"
         alt=""
         className="hidden lg:block absolute top-18 right-16 xl:right-32 lg:right-22 md:right-40   w-12 h-12 md:w-16 md:h-16 z-20"
       />
       <img
-        src="homePage/homepage/herosection/Vector (3).svg"
+        src="homePage/herosection/Vector (3).svg"
         alt=""
         className="hidden lg:block absolute top-70 left-[38%] xl:left-[56%] lg:left-[50%] md:left-[40%] lg:top-59 w-12 h-12 md:w-11 md:h-11 z-20"
       />
@@ -81,19 +81,19 @@ const HeroSection = () => {
             {/* Mobile/Tablet Image - Rectangle 3, hidden on lg+ */}
             <div className="relative lg:hidden w-full mt-2 flex justify-center">
               <img
-                src="homePage/homepage/herosection/Rectangle3.webp"
+                src="homePage/herosection/Rectangle3.webp"
                 alt="Models wearing stylish clothes"
                 className="w-full max-w-sm sm:max-w-md h-auto object-contain object-center mx-auto"
               />
 
               {/* Stars over mobile image */}
               <img
-                src="homePage/homepage/herosection/Vector (2).svg"
+                src="homePage/herosection/Vector (2).svg"
                 alt=""
                 className="absolute top-[12%] right-[14%] w-10 h-10 sm:w-14 sm:h-14 z-20"
               />
               <img
-                src="homePage/homepage/herosection/Vector (3).svg"
+                src="homePage/herosection/Vector (3).svg"
                 alt=""
                 className="absolute top-[45%] left-[8%] w-5 h-5 sm:w-9 sm:h-9 z-20"
               />
